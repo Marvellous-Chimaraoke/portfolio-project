@@ -40,6 +40,10 @@
           font-size: 3.5rem;
         }
       }
+
+      .img-container{
+        text-align: center
+      }
     </style>
 
     
@@ -66,7 +70,9 @@
 
 <main>
 <div class="container">
+    <div class="img-container">
     <img class="img-fluid pt-3" width="600" height="400" src={{blog.image.url }} />
+    <div/>
     <br/>
     <h1 class="text-center pt-3">{{ blog.title }}</h1>
     <p class="text-center">{{ blog.publish_date }}</p>
