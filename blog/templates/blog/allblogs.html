@@ -73,7 +73,7 @@
     <hr/>
     {% for blog in blogs.all %}
     <img class="img-fluid" width="400" height="200" src={{blog.image.url }} />
-    <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
+    <h3>{{ blog.title }}</h3>
     {{ blog.publish_date }}
     <p>{{ blog.summary }}<a href="{% url 'detail' blog.id %}">continue reading</a></p>
     
