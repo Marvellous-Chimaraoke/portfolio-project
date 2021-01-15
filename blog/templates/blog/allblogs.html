@@ -74,7 +74,7 @@
     {% for blog in blogs.all %}
     <img class="img-fluid" width="400" height="200" src={{blog.image.url }} />
     <h3>{{ blog.title }}</h3>
-    {{ blog.publish_date }}
+    {{ blog.publish_date_pretty }}
     <p>{{ blog.summary }}<a href="{% url 'detail' blog.id %}">continue reading</a></p>
     
     <br/>
