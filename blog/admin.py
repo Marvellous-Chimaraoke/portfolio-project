@@ -1,5 +1,12 @@
 from django.contrib import admin
-from .models import Blog
+from .models import *
+from tinymce.widgets import TinyMCE
 # Register your models here.
 
-admin.site.register(Blog)
+class BlogAdmin(admin.ModelAdmin):
+    formfield_overrides = {
+        models.TextField: {'widget': TinyMCE()},
+    }
+
+
+admin.site.register(Blog, BlogAdmin)
