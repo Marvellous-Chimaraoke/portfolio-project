@@ -49,9 +49,11 @@ TINYMCE_DEFAULT_CONFIG = {
     'toolbar1': 'formatselect | bold italic underline | alignleft aligncenter alignright alignjustify '
                '| bullist numlist | outdent indent | table | link image | codesample | preview code',
     'contextmenu': 'formats | link image',
-    'menubar': False,
+    'menubar': True,
     'inline': False,
     'statusbar': True,
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 20,
     'width': 'auto',
     'height': 360,
 }
