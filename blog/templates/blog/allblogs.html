@@ -74,7 +74,7 @@
     {% for blog in blogs.all %}
     <h3>{{ blog.title }}</h3>
     {{ blog.publish_date_pretty }}
-    <p>{{ blog.summary }}<a href="{% url 'detail' blog.id %}">continue reading</a></p>
+    <p>{{ blog.summary | safe }}<a href="{% url 'detail' blog.id %}">continue reading</a></p>
     
     <br/>
     {% endfor %}

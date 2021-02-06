@@ -50,7 +50,6 @@ TINYMCE_DEFAULT_CONFIG = {
                '| bullist numlist | outdent indent | table | link image | codesample | preview code',
     'contextmenu': 'formats | link image',
     'menubar': True,
-    'inline': False,
     'statusbar': True,
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 20,
