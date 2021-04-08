@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
 TINYMCE_DEFAULT_CONFIG = {
     'selector': 'textarea',
-    'theme': 'modern',
+    'theme': 'silver',
     'plugins': 'link image preview codesample contextmenu table code lists',
     'toolbar1': 'formatselect | bold italic underline | alignleft aligncenter alignright alignjustify '
                '| bullist numlist | outdent indent | table | link image | codesample | preview code',
@@ -149,3 +149,6 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
+
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
